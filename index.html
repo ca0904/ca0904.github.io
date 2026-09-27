@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Chetan Agrawal</title>
+  <meta name="description" content="Chetan Agrawal: Member of Technical Staff at Nutanix, working on cloud-native storage with Go and Kubernetes.">
+  <link rel="icon" href="data:,">
+  <style>
+    /* Link colour is the blue Codeforces uses for Expert-rated handles. */
+    :root {
+      --bg: #ffffff;
+      --text: #161616;
+      --muted: #5e5e5e;
+      --link: #1f2bd6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text: #ededed;
+        --muted: #9a9a9a;
+        --link: #a9b1ff;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    /* Type scale (px): 16, 18, 21, 36, 60. */
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+      font-size: 1.125rem;
+      line-height: 1.65;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .wrap {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 6rem 1.25rem 5rem;
+    }
+
+    h1 {
+      margin: 0 0 1.5rem;
+      font-size: 3.75rem;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+
+    h2 {
+      margin: 0 0 1.25rem;
+      font-size: 1.3125rem;
+      line-height: 1.3;
+    }
+
+    h3 { margin: 0; font-size: 1.125rem; line-height: 1.5; }
+
+    p { margin: 0; }
+
+    .nowrap { white-space: nowrap; }
+
+    .intro { font-size: 1.3125rem; line-height: 1.55; text-wrap: pretty; }
+
+    section { margin-top: 4rem; }
+
+    ul { margin: 0; padding: 0; list-style: none; }
+
+    .job {
+      display: grid;
+      grid-template-columns: 9.5rem 1fr;
+      column-gap: 1.5rem;
+    }
+    .job + .job { margin-top: 1.75rem; }
+
+    .when {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.6875rem; /* aligns its baseline with the job title */
+    }
+
+    .highlights li + li { margin-top: 1rem; }
+
+    .links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+
+    @media (max-width: 36rem) {
+      .wrap { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+      h1 { font-size: 2.25rem; margin-bottom: 1rem; }
+      .intro { font-size: 1.125rem; }
+      section { margin-top: 3rem; }
+      .job { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Chetan Agrawal</h1>
+      <p class="intro">
+        Member of Technical Staff at Nutanix in Pune, working on cloud-native storage (<span class="nowrap">CN-AOS</span>)
+        with Go and Kubernetes. Computer Science and Engineering graduate from IIT (BHU) Varanasi, 2026.
+      </p>
+    </header>
+
+    <main>
+      <section aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+        <ul>
+          <li class="job">
+            <p class="when"><time datetime="2026-07">Jul 2026</time> – present</p>
+            <div>
+              <h3>Nutanix, MTS-1</h3>
+              <p>Cloud Native AOS (<span class="nowrap">CN-AOS</span>) team.</p>
+            </div>
+          </li>
+          <li class="job">
+            <p class="when"><time datetime="2025-05">May</time> – <time datetime="2025-07">Jul 2025</time></p>
+            <div>
+              <h3>Moveworks, Software Engineer Intern</h3>
+              <p>Built a testing framework from scratch for core data products and integrated it into CI/CD.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="highlights">
+        <h2 id="highlights">Highlights</h2>
+        <ul class="highlights">
+          <li>
+            <a href="https://codeforces.com/profile/fern">Codeforces Expert</a>,
+            max rating 1703, ~1,300 problems solved.
+          </li>
+          <li>
+            <a href="https://doi.org/10.1109/SPACE63117.2024.10667821">IEEE SPACE 2024 paper</a>
+            on cost minimisation in 6G space-air-ground networks.
+          </li>
+          <li>
+            Open source: <a href="https://github.com/tekumara/fakesnow/pulls?q=is%3Apr+author%3Aca0904">async
+            query execution and multi-column ALTER TABLE support</a> in
+            <a href="https://github.com/tekumara/fakesnow">fakesnow</a>; an
+            <a href="https://github.com/zydezu/ModernX/pull/79">autohide fix</a> in
+            <a href="https://github.com/zydezu/ModernX">ModernX</a>, an mpv UI script.
+          </li>
+          <li>JEE Advanced 2022, AIR 861.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="links">
+        <h2 id="links">Links</h2>
+        <ul class="links">
+          <li><a href="https://github.com/ca0904" rel="me">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/chetanagrawal09/" rel="me">LinkedIn</a></li>
+          <li><a href="mailto:agrawalvchetan@gmail.com">Email</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
